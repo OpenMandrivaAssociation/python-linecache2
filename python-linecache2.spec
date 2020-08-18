@@ -2,7 +2,7 @@
 
 Name:           python-%{srcname}
 Version:        1.0.0
-Release:        1
+Release:        2
 Summary:        Backports of the linecache module
 
 Group:          Development/Python
@@ -10,8 +10,8 @@ License:        Python Software Foundation License
 URL:            https://github.com/testing-cabal/linecache2
 Source0:        http://pypi.python.org/packages/source/l/%{srcname}/%{srcname}-%{version}.tar.gz
 BuildArch:      noarch
-BuildRequires:  pkgconfig(python3)
-BuildRequires:  python3egg(setuptools)
+BuildRequires:  pkgconfig(python)
+BuildRequires:  python3dist(setuptools)
 
 %description
 A backport of linecache to older supported Pythons.
@@ -21,7 +21,7 @@ Summary:        Backports of the linecache module
 Group:          Development/Python
 BuildArch:      noarch
 BuildRequires:  pkgconfig(python2)
-BuildRequires:  pythonegg(setuptools)
+BuildRequires:  python2dist(setuptools)
 
 %description -n python2-%{srcname}
 A backport of linecache to older supported Pythons.
