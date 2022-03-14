@@ -2,7 +2,7 @@
 
 Name:           python-%{srcname}
 Version:        1.0.0
-Release:        2
+Release:        3
 Summary:        Backports of the linecache module
 
 Group:          Development/Python
@@ -12,7 +12,8 @@ Source0:        http://pypi.python.org/packages/source/l/%{srcname}/%{srcname}-%
 BuildArch:      noarch
 BuildRequires:  pkgconfig(python)
 BuildRequires:  python3dist(setuptools)
-
+BuildRequires:  python3dist(wheel)
+BuildRequires:  python3dist(pip)
 %description
 A backport of linecache to older supported Pythons.
 
