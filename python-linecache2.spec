@@ -2,7 +2,7 @@
 
 Name:           python-%{srcname}
 Version:        1.0.0
-Release:        3
+Release:        4
 Summary:        Backports of the linecache module
 
 Group:          Development/Python
